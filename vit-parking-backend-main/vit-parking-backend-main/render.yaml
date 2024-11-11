@@ -1,0 +1,14 @@
+# Exported from Render on 2024-07-05T14:56:21Z
+services:
+- type: web
+  name: vit-parking-backend
+  runtime: node
+  repo: https://github.com/GunaNalam/vit-parking-backend
+  plan: free
+  envVars:
+  - key: mongo
+    sync: false
+  region: oregon
+  buildCommand: npm install node-modules dotenv crypto jsonwebtoken bcryptjs cors express mongoose && ls dist
+  startCommand: node index.js
+version: "1"

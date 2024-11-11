@@ -1,0 +1,239 @@
+.buttons {
+  height: 300px;
+  padding-top: 110px;
+  font-size: 50px;
+  font-weight: semi-bold;
+  font-family: "nato sans";
+  text-align: center;
+  border: 2px solid rgb(153, 255, 0);
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+.buttons:hover {
+  background-color: rgb(129, 211, 4);
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.links:hover {
+  color: black;
+}
+/* choose your destination */
+.MainHeading {
+  font-weight: bold;
+  font-size: 58px;
+  text-align: center;
+  font-family: "nato sans";
+  color: rgb(255, 255, 255);
+}
+.MainHeading:hover {
+  color: rgb(153, 255, 0);
+}
+
+.links-hover {
+  /* color: greenyellow; */
+  text-decoration: "underline";
+}
+
+.links-hover:hover {
+  color: black;
+}
+
+.sub-headings {
+  color: white;
+  font-size: 50px;
+  font-weight: semi-bold;
+  text-align: center;
+}
+
+.sub-headings:hover {
+  color: rgb(153, 255, 0);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.boxstyling-available {
+  outline: 3.5px solid greenyellow;
+  margin-right: 23px;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.boxstyling-available:hover {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+}
+
+.boxstyling {
+  font-weight: bold;
+  margin-right: 23px;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: greenyellow;
+}
+
+.boxstyling:hover {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+}
+
+.boxstyling-not-available {
+  margin-right: 23px;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  background-color: grey;
+  outline: 3.5px solid grey;
+  cursor: not-allowed;
+  color: white;
+}
+
+/* .boxstyling{
+    background-color: grey;
+} */
+
+/* .boxstyling{
+    outline: 3.5px solid red;
+    margin-right: 20px;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    color: white;
+}
+.boxstyling:hover{
+    background-color: red;
+} */
+
+/* Parking Home Page */
+.parking-main {
+  background: linear-gradient(280deg, #b75b48, #b75b48);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 35 ease infinite;
+  -moz-animation: AnimationName 35 ease infinite;
+  -o-animation: AnimationName 35 ease infinite;
+  animation: AnimationName 35 ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fullscreen loading screen with blurred background */
+.loading-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(8px); /* Blurs the background */
+  z-index: 9999; /* Ensure it is on top */
+}
+
+/* Loading animation */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  top: 18.5rem;
+  left: 48%;
+  width: 130px;
+  height: 130px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 20px;
+  background: white; /* Change to white for better visibility */
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 10px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 34px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 58px;
+  animation-delay: 0s;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}

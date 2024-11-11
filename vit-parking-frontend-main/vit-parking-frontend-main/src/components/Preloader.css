@@ -1,0 +1,19 @@
+#loader #loader-svg {
+  z-index: 99999; /* Ensure it's above other elements */
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(to top,#3facf4, #fff); */
+  background: linear-gradient(#36a9f5, #fff);
+  z-index: 999999; /* Ensure it's above other elements */
+  position: fixed;
+  top: 0;
+}
+.temp{
+  font-size: 200px;
+  padding-top: 100px;
+  font-weight: bold;
+  fill: #17198a;
+}
